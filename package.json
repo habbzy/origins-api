@@ -1,0 +1,46 @@
+{
+  "type": "module",
+  "name": "@habbzy/origins-api",
+  "version": "1.0.0",
+  "description": "A TypeScript-compatible runtime for the Habbo Origins API.",
+  "repository": "habbzy/origins-api",
+  "license": "GPL-3.0-only",
+  "sideEffects": false,
+  "packageManager": "pnpm@9.7.1",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "browser": "./dist/index.mjs",
+      "bun": "./dist/index.mjs",
+      "deno": "./dist/index.mjs",
+      "edge-light": "./dist/index.mjs",
+      "edge-routine": "./dist/index.mjs",
+      "netlify": "./dist/index.mjs",
+      "react-native": "./dist/index.mjs",
+      "wintercg": "./dist/index.mjs",
+      "worker": "./dist/index.mjs",
+      "workerd": "./dist/index.mjs",
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.8.1",
+    "@types/node": "^20.16.1",
+    "typescript": "^5.5.4",
+    "unbuild": "2.0.0"
+  }
+}

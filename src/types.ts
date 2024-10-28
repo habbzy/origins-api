@@ -81,3 +81,22 @@ export interface Pose {
   h: number;
   a: number;
 }
+
+export interface HabboDenAvatarData {
+  name: string;
+  habbo_id: string;
+  figure_string: string;
+  online_status: boolean;
+  console_tag: string;
+  last_seen: string;
+  rooms?: HabboDenRoom[];
+  status?: boolean;
+}
+
+export interface HabboDenRoom {
+  id: number;
+  name: string;
+  description: string | null;
+  max_users: number;
+  privacy: 'closed' | 'password' | 'open';
+}

@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "@habbzy/origins-api",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A TypeScript-compatible runtime for the Habbo Origins API.",
   "repository": "habbzy/origins-api",
   "license": "GPL-3.0-only",

@@ -18,7 +18,7 @@ export async function avatar<HD extends boolean = false, R = HD extends true ? H
       const response = await fetch(`${habboDenApiUrl}/${encodeURIComponent(username)}`);
       const responseData = (await response.json()) as HabboDenAvatarData;
 
-      if (typeof responseData?.habbo_id === 'string') {
+      if (responseData && 'habbo_id' in responseData) {
         data = responseData as R;
       }
     } else {

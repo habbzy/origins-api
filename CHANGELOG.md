@@ -1,3 +1,7 @@
+# 2.0.2 (2023-10-30)
+
+- fix invalid check for an avatar not existing in habboden api
+
 # 2.0.0 (2023-10-28)
 
 - support habboden for fetching avatar data
